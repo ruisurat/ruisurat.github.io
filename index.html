@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--CSS Styles-->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!--Favicons-->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/icons/.png"
+        />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/images/8fa.png"
+        />
+
+        <!--Animate CSS CDN-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <title></title>
+
+    </head>
+
+    <body>
+        
+        <!--Navbar-->
+        <nav>
+            <h1>ruisu</h1>
+            <ul class="navigation">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <!--<li><a href="#socials" class="nav-link">Socials</a></li>-->
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+              <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+      </nav>
+
+      <!--About-->
+      <section class="hero" id="about">
+          <img
+            src="assets/images/8fa.png"
+            alt="ruisu"
+            loading="lazy"
+            class="hero-img"
+          />
+          <div class="bio animate_animated animate_shakeX">
+              <h2 class="bio-title">About Me</h2>
+              <p class="bio-text">
+                Hi there, I'm ruisu AKA Lewis. I'm an 18 year old Computing student who enjoys experimenting with C#, Java, Lua, HTML and Python.
+                I like to create a lot of custom scripts for Garry's Mod, and hope to begin creating on s&box at some point.
+              </p>
+          </div>
+      </section>
+
+      <!-- More About
+      <section class="more-about">
+          <h2>More About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore tempore minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro
+          </p>
+      </section> -->
+
+      <!--Projects-->
+      <section class="projects" id="projects">
+          <h2 class="projects-title">What I'm working on!</h2>
+          <div class="projects-container">
+              <div class="project-container project-card">
+                <a href="#contact">
+                  <img
+                        src="assets/images/whitelist.png"
+                        alt="whitelist-system"
+                        loading="lazy"
+                        class="project-pic"
+                    />
+                  </a>
+
+                    <h3 class="project-title">Whitelist System</h3>
+                    <p class="project-details">
+                        A lightweight and easy-to-use private whitelist system built for Garry's Mod servers that I work on. For details
+                        on acquiring this product please contact me.
+                    </p>
+              </div>
+              <div class="project-container project-card">
+                <a href="#contact">
+                  <img
+                        src="assets/images/war.png"
+                        alt="war-system"
+                        loading="lazy"
+                        class="project-pic"
+                    />
+                  </a>
+
+                  <h3 class="project-title">War System</h3>
+                  <p class="project-details">
+                      Completely custom war system for MilitaryRP servers with built-in objectives such as conquest, intel, and more. This is 
+                      a W.I.P project, if you'd like this for your server please contact me.
+                  </p>
+            </div>
+            <div class="project-container project-card">
+                <a href="https://github.com/ruisurat/rui-capture-system">
+                <img
+                      src="assets/images/capture.png"
+                      alt="ctf-system"
+                      loading="lazy"
+                      class="project-pic"
+                  />
+                </a>
+
+                  <h3 class="project-title">CTF System</h3>
+                  <p class="project-details">
+                      An extremely basic 'Capture the Flag' system which is essentially an early version of the War System. If interested, you can download it from my GitHub.
+                      Requires some Lua knowledge to configure.
+                  </p>
+            </div>
+          </div>
+      </section>
+
+      <!--Contact-->
+      <section class="contact" id="contact">
+          <h2>Get in Touch</h2>
+          <div class="contact-form-container">
+              <div class="contact-form">
+                  <form action="https://formspree.io/f/xyylraeg" method="POST">
+                      <div class="form-control">
+                          <label for="name">Name</label>
+                          <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Enter your name"
+                            class="input-field"
+                            required
+                          />
+                      </div>
+                      <div class="form-control">
+                        <label for="email">Email</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="sender-email"
+                          placeholder="Enter your e-mail"
+                          class="input-field"
+                          required
+                        />
+                      </div>
+                      <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea
+                          id="message"
+                          cols="60"
+                          rows="10"
+                          placeholder="Enter your message"
+                          name="message"
+                          class="input-field"
+                          required
+                        ></textarea>
+                      </div>
+                      <input
+                        type="submit"
+                        value="Submit"
+                        id="submit-btn"
+                        class="submit-btn"
+                      />
+                  </form>
+              </div>
+          </div>
+      </section>
+
+      <!--Socials-->
+      <div class="socials">
+        <a href="https://twitter.com/ruisuttv" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled-48.png"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/ruisurat" target="_blank"
+        ><img 
+          src="assets/icons/icons8-github-48.png" 
+          alt="Github" 
+          class="socicon"
+      /></a>
+      </div>
+
+      <!--Footer-->
+      <footer>
+        <p class="copy">&copy; Copyright 2021</p>
+        <p class="copy">
+          Built with &#x2661 by
+          <a href="https://twitter.com/ruisuttv" target="_blank">
+            ruisu
+          </a>
+        </p>
+      </footer>
+
+      <i class="scroll-up" id="scroll-up">
+        <img
+          src="assets/icons/icons8-scroll-up-48.png"
+          class="socicon up-arrow"
+          alt="scroll-up"
+        >
+      </i>
+
+        <!--Scripts-->
+        <script src="assets/js/app.js"></script>
+
+        <!--Ion icons scripts-->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+
+    </body>
+</html>
