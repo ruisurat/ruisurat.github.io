@@ -225,6 +225,7 @@ padding: 1rem;
     padding: 0.938rem;
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--primary-shadow);
+    background-color: var(--secondary-bg-color)
 }
 
 .contact-form-container label {
