@@ -44,3 +44,21 @@ function recursiveAnimateTitle(string) {
   }
   
   animateTitle('ruisu ~ portfolio!');
+
+  function recursiveAnimateHeader(string) {
+    let header_firstLetter = string[0];
+    let header = document.querySelector('.nav-header');
+    header.innerHTML += header_firstLetter;
+    if (string.length > 1) {
+      setTimeout(function() {
+        recursiveAnimateHeader(string.substring(1));
+      }, 100);
+    }
+  }
+  
+  function animateHeader(string) {
+    document.querySelector('.nav-header').innerHTML = "";
+    recursiveAnimateHeader(string);
+  }
+  
+  animateHeader('ruisu.');
