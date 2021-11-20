@@ -465,6 +465,18 @@ footer a {
         font-size: 0.7rem;
     }
 
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-container {
+        width: 20.875rem;
+    }
+
+    .service-card p {
+        font-size: 0.7rem;
+    }
+
     .contact-form-container {
         max-width: 23.75rem;
     }
@@ -481,6 +493,10 @@ footer a {
     }
 
     .project-container {
+        width: 17.875rem;
+    }
+
+    .service-container {
         width: 17.875rem;
     }
 
