@@ -231,7 +231,7 @@ padding: 1rem;
 .contact-form-container label {
     line-height: 2.7em;
     font-weight: var(--bold-font);
-    color: var(--secondary-color);
+    color: var(--primary-text);
 }
 
 .contact-form-container textarea {
