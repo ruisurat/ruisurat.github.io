@@ -87,6 +87,11 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 
+nav ul li:hover {
+    animation: shakeX;
+    animation-duration: 2s;
+}
+
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
@@ -170,6 +175,8 @@ nav ul li {
     width: 70%;
     height: 65%;
     transition: var(--transition);
+    animation: pulse;
+    animation-duration: 1s;
 }
 
 .projects-container {
@@ -232,6 +239,8 @@ padding: 1rem;
     width: 70%;
     height: 65%;
     transition: var(--transition);
+    animation: pulse;
+    animation-duration: 1s;
 }
 
 .services-container {
@@ -374,6 +383,8 @@ padding: 1rem;
     width: 2.5rem;
     height: 2.5rem;
     transition: var(--transition);
+    animation: wobble;
+    animation-duration: 1s;
 }
 
 /* Footer */
