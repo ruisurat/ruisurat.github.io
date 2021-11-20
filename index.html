@@ -40,8 +40,8 @@
             <h1>ruisu</h1>
             <ul class="navigation">
               <li><a href="#about" class="nav-link">About</a></li>
-              <!--<li><a href="#socials" class="nav-link">Socials</a></li>-->
               <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#services" class="nav-link">Services</a></li>
               <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="burger-menu" id="burger-menu">
@@ -157,6 +157,58 @@
           </div>
       </section>
 
+          <!--services-->
+      <section class="services" id="services">
+      <h2 class="services-title">My Services 🖱️</h2>
+      <div class="services-container">
+          <div class="service-container service-card">
+            <a href="#contact">
+              <img
+                    src="assets/images/setup.png"
+                    alt="whitelist-system"
+                    loading="lazy"
+                    class="service-pic"
+                />
+              </a>
+
+                <h3 class="service-title">Server Setup</h3>
+                <p class="service-details">
+                    I will quickly setup your Garry's Mod server, including gamemode and addon configuration, and have it ready to run within a day or two. Price starts at £10 and may change depending on what you need done.
+                </p>
+          </div>
+          <div class="service-container service-card">
+            <a href="#contact">
+              <img
+                    src="assets/images/custom.png"
+                    alt="war-system"
+                    loading="lazy"
+                    class="service-pic"
+                />
+              </a>
+
+              <h3 class="service-title">Custom Addon</h3>
+              <p class="service-details">
+                  I will code you a custom addon based on the requirements you give me. Contact me for a quote. Price is subject to change depending on addon complexity etc.
+              </p>
+        </div>
+        <div class="service-container service-card">
+            <a href="#contact">
+            <img
+                  src="assets/images/fix.png"
+                  alt="ctf-system"
+                  loading="lazy"
+                  class="service-pic"
+              />
+            </a>
+
+              <h3 class="service-title">Server Optimization</h3>
+              <p class="service-details">
+                  If your players are experiencing a lot of lag, etc. you can hire me to find the cause of said lag and attempt to fix it. If I can't, you won't be charged for any work done.
+              </p>
+        </div>
+      </div>
+      </section>
+
       <!--Contact-->
       <section class="contact" id="contact">
           <h2>Get in Touch 🤙</h2>
@@ -184,6 +236,16 @@
                           class="input-field"
                           required
                         />
+                      </div>
+                      <div class="form-control">
+                        <label for="servicesform">Service</label>
+                        <select id="servicesform" name="services-form">
+                          <option value="other" selected>Other</option>
+                          <option value="addon-purchase">Addon Purchase</option>
+                          <option value="server-setup">Server Setup</option>
+                          <option value="custom-addon">Custom Addon</option>
+                          <option value="server-optimization">Server Optimization</option>
+                        </select>
                       </div>
                       <div class="form-control">
                         <label for="message">Message</label>
