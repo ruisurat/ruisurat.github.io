@@ -408,6 +408,20 @@ footer a {
     transition: var(--transition);
 }
 
+.spotify-header {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.spotify-player {
+    margin-top: 0.3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (max-width: 720px) {
     nav {
         padding: 1.5rem 1rem;
